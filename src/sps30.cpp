@@ -1141,6 +1141,7 @@ uint8_t SPS30::I2C_SetPointer_Read(uint8_t cnt, bool chk_zero)
     }
 
     // read from Sensor
+    delay(5);
     ret = I2C_ReadToBuffer(cnt, chk_zero);
 
     if (_SPS30_Debug){
